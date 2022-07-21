@@ -32,6 +32,7 @@
   --orange: #ff5f01;
   --white: #ffffff;
   --grey: #e6e6e6;
+  --dark-grey: #ACACAC;
 }
 
 /*----------Tegs------------------*/
@@ -58,7 +59,6 @@ a {
   width: 100%;
 }
 a:hover {
-	/* color: var(--orange); */
   transition: all 0.3s linear;
 }
 button {
@@ -105,6 +105,7 @@ button {
 	justify-content: center;
   padding: 0 15px;
   width: 1200px;
+  
 } 
 .section__title {
   font-size: 38px;
@@ -157,12 +158,6 @@ button {
 .btn_orange {
   background-color: var(--orange);
   width: 150px;
-}
-.btn_orange:hover, .btn_orange_small:hover {
-  background-color: var(--blue);
-}
-.btn_blue:hover {
-  background-color: var(--orange);
 }
 
 /*----------Finish section------------------*/
@@ -370,13 +365,14 @@ padding: 70px 18px 60px 40px;
 }
 .policy {
   font-size: 12px;
-  font-family: "MuseoCyrl700";
+  font-family: "MuseoCyrl";
   margin-top: 5px;
 }
 .policy_box {
   display: flex;
   flex-grow: 1;
 }
+
 
 /*----------Idea section------------------*/
 
@@ -419,6 +415,7 @@ padding: 70px 18px 60px 40px;
 .idea_button {
   position: relative;
 }
+
 .btn_absolute {
   position: absolute;
   top: calc( 50% - 25px);
@@ -427,6 +424,24 @@ padding: 70px 18px 60px 40px;
 .orange {
   color: var(--orange);
 }
+.btn_none {
+  visibility: hidden;
+}
+.btn_shadow {
+  visibility: visible;
+  transition: all 0.3s linear;
+  opacity: 1;
+}
+.img_opacity:hover {
+  opacity: 0.75;
+}
+
+.btn_shadow:hover, .box_shadow:hover {
+  box-shadow: 0 0 30px var(--dark-grey);
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
 /*----------Params section------------------*/
 
 .params__item {
